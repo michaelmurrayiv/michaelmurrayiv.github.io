@@ -76,7 +76,10 @@ html {
   
   /* page title formatting */
   .page-title {
-    color: black;
+    display: flex;
+    justify-content: left;
+    font-size: 32px;
+    color: rgb(37, 37, 37);
   }
 
   /* about section formatting */
@@ -89,10 +92,67 @@ html {
     padding: 10px;
   }
 
-  .about-image {
+  .project {
+    display: flex;
+    justify-content: space-between;
+    background-color:aliceblue;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
     padding: 10px;
   }
 
+  .resume {
+    
+    background-color:aliceblue;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .about-image {
+    padding: 0px 10px 0px 0px;
+  }
+
+
+/*image caption*/
+  .phonebooth figcaption {
+    background-color: aliceblue;
+    color: black;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: Georgia;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+  }
+  .contact-class {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:aliceblue;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  form {
+    width:1200px;
+    margin: 0 auto;
+    }
   /* CSS for page footer */
   
   .footer {
