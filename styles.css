@@ -3,7 +3,12 @@ html {
   }
   
   body {
-    background-color: white;
+    /* background image options */
+    background-image: url(cloud.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
     position: relative;
     min-height: 100vh;
     padding: 0;
@@ -67,7 +72,10 @@ html {
     color: #340095;
   }
   
-  
+  /* page title formatting */
+  .page-title {
+    color: black;
+  }
 
 
 
