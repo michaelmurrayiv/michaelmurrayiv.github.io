@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = formData.get("email");
     const message = formData.get("message");
 
-// send email confirmation here
+//TODO: Send form data to my email, and confirmation to user's email
 
 
     form.reset();
