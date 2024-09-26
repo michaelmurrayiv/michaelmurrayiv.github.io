@@ -1,170 +1,94 @@
-html {
-    height: 100%;
-  }
-  
-  body {
-    /* background image options */
-    background-image: url(cloud.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e0f7fa;
     position: relative;
     min-height: 100vh;
     padding: 0;
     margin: 0;
-  }
-  
-  main {
+}
+
+main {
     padding: 0 20px 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    font-family: sans-serif;
-  }
-  
-  /* CSS for navigation bar */
-  
-  .navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 7%;
-    z-index: 10;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+    background: #0277bd;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-  
-    background-color: #1a63b0;
-    color: white;
-    padding: 0px 0px;
-  
-    /* Debug border */
-    /* border: solid red; */
-  }
-  
-  .nav-list {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    right: 30px;
+}
+
+nav ul {
     list-style: none;
-  }
-  
-  .navbar a {
-    color: #ffffff;
-    font-weight: bold;
-    margin: 0 12px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    letter-spacing: 2px;
+}
 
-    font-family: helvetica;
-  }
-
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-
-  .navbar a:active {
-    color: #340095;
-  }
-  
-  /* page title formatting */
-  .page-title {
-    display: flex;
-    justify-content: left;
-    font-size: 32px;
-    color: rgb(37, 37, 37);
-  }
-
-  /* about section formatting */
-  .about {
-    display: flex;
-    justify-content: space-between;
-    background-color:aliceblue;
-    border: 1px solid rgb(112, 112, 112);
-    border-radius: 5px;
-    padding: 10px;
-  }
-
-  .project {
-    display: flex;
-    justify-content: space-between;
-    background-color:aliceblue;
-    border: 1px solid rgb(112, 112, 112);
-    border-radius: 5px;
-    padding: 10px;
-  }
-
-  .resume {
-    
-    background-color:aliceblue;
-    border: 1px solid rgb(112, 112, 112);
-    border-radius: 5px;
-    padding: 10px;
-  }
-
-  .about-image {
-    padding: 0px 10px 0px 0px;
-  }
-
-
-/*image caption*/
-  .phonebooth figcaption {
-    background-color: aliceblue;
-    color: black;
-    font-style: italic;
-    padding: 2px;
+.page-title {
     text-align: center;
-  }
+    color: #01579b;
+}
 
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-family: Georgia;
+.resume {
+    margin-top: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    background: #0288d1;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -20px 10px;
+}
+
+.entry {
+    margin-bottom: 10px;
+}
+
+.entry-title {
     font-weight: bold;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    resize: none;
-  }
-  .contact-class {
-    display: flex;
-    justify-content: space-evenly;
-    background-color:aliceblue;
-    border: 1px solid rgb(112, 112, 112);
-    border-radius: 5px;
-    padding: 10px;
-  }
+    color: #01579b;
+}
 
-  form {
-    width:1200px;
-    margin: 0 auto;
-    }
-  /* CSS for page footer */
-  
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1a63b0;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    font-family: helvetica;
-  }
-  
+.entry-info {
+    font-style: italic;
+    color: #0277bd;
+}
+
+.entry-details {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.course-list, .skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-list li, .skills-list li {
+    background: #e1f5fe;
+    margin: 5px 0;
+    padding: 5px;
+    border-left: 5px solid #0288d1;
+}
