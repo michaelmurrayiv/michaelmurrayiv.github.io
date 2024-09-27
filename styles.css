@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #e0f7fa;
   position: relative;
   min-height: 100vh;
   padding: 0;
@@ -16,6 +16,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .page-title {
@@ -91,6 +94,9 @@ main {
 
 .resume {
   margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding:  0 20px 20px 20px;
 }
 
 .section {
@@ -174,8 +180,8 @@ main {
 }
 
 .contact-class input[type="submit"] {
-  background-color: #0277bd; /* Dark blue background */
-  color: #fff; /* White text */
+  background-color: #0277bd;
+  color: #fff; 
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -185,4 +191,38 @@ main {
 
 .contact-class input[type="submit"]:hover {
   background-color: #01579b; /* Darker blue on hover */
+}
+
+
+/* about me */
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+
+}
+
+.about-image {
+  margin-right: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.about-text {
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.about-text p {
+  margin: 0;
+  color: #0277bd;
+  font-size: 1.1rem;
 }
