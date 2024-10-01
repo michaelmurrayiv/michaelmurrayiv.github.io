@@ -13,11 +13,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const message = formData.get("message");
 
     // Send form data to emailjs
-    emailjs.send("service_michaels_website", "template_muguowi", {
-      from_name: name,
-      reply_to: email,
-      message: message,
-    });    
+    emailjs
+      .send("service_michaels_website", "template_muguowi", {
+        from_name: name,
+        reply_to: email,
+        message: message,
+      })
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          form.reset();
+          responseMessage.style.display = "block"; // success
+        },
+        function (error) {
+          console.error("FAILED...", error);
+        }
+      );    
 
     form.reset();
     responseMessage.style.display = "block"; // success message

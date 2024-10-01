@@ -5,12 +5,17 @@
         <link rel="stylesheet" href="styles.css" />
         <script defer src="send_message.js"></script> 
     </head>    
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function(){
-        emailjs.init({publicKey: 'eJGyeI3M9UIhKIu8w'});
-      })();
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "H36KgFUPp9Cy5WLf2",
+          });
+       })();
+    </script>
+     
     <body>
         <nav class="navbar">
             <h1 class="logo"><a href="index.html">michael's website</a></h1>
