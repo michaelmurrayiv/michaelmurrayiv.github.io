@@ -3,8 +3,14 @@
     <head>
         <title>Michael's Website!</title>
         <link rel="stylesheet" href="styles.css" />
-        <script defer src="send_message.js"></script> <!-- Link to the JavaScript file -->
-    </head>
+        <script defer src="send_message.js"></script> 
+    </head>    
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({publicKey: 'eJGyeI3M9UIhKIu8w'});
+      })();
+    </script>
     <body>
         <nav class="navbar">
             <h1 class="logo"><a href="index.html">michael's website</a></h1>
@@ -32,7 +38,7 @@
                 ></textarea>
                 <input type="submit" value="Submit" />
             </form>
-            <p id="form-response" style="display:none;">Thank you for your message!</p> <!-- Success message -->
+            <p id="form-response" style="display:none;">Thank you for your message, I will email you back soon!</p> <!-- Success message -->
         </main>
         <footer class="footer">
             © 2024 Michael's Website! | All Rights Reserved

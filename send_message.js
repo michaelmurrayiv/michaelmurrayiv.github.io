@@ -12,8 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = formData.get("email");
     const message = formData.get("message");
 
-//TODO: Send form data to my email, and confirmation to user's email
-
+    // Send form data to emailjs
+    emailjs.send("service_michaels_website", "template_muguowi", {
+      from_name: name,
+      reply_to: email,
+      message: message,
+    });    
 
     form.reset();
     responseMessage.style.display = "block"; // success message
